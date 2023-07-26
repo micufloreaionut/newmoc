@@ -1,0 +1,34 @@
+{
+  "name": "newmoc",
+  "displayName": "newmoc - mocha code snippets",
+  "description": "Mocha snippets for API testing",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micufloreaionut/newmoc.git"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/testData.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/runTests.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/classTemplate.code-snippets"
+      }
+    ]
+  }
+}

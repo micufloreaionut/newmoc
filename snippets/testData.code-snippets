@@ -1,0 +1,34 @@
+{
+    "testData": {
+        "scope": "javascript",
+        "prefix": "!newmoc",
+        "body": [
+            "import TestTemplate from '$1';",
+            "",
+            "export default (async ()=> new TestTemplate({",
+            "    suiteName: '$2',",
+            "    method: '$3',  //lowercase method name",
+            "    url: `$4`,",
+            "    api: (urlParameters) => `$5`,",
+            "    scenarios: [",
+            "        {",
+            "            testName: '$6',",
+            "            status: ${7:200},",
+            "            urlParameters: {},",
+            "            queryParameters: {},",
+            "            body: {},",
+            "            formData: {},",
+            "            file: {",
+            "                fieldName: '',",
+            "                fieldNameValue: '',",
+            "                filePath: ''",
+            "            },",
+            "            headers: {},",
+            "            jsonSchema: {}",
+            "        }",
+            "    ]",
+            "}))()",
+        ],
+        "description": "Define test data for a new suite"
+    }
+}

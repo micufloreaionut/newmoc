@@ -1,0 +1,31 @@
+{
+    "runAll": {
+        "scope": "javascript",
+        "prefix": "!runAll",
+        "body": [
+            "describe('Await for promises - $1', function () {",
+            "    it('Updating data', async function () {",
+            "        let testData  = await $2;",
+            "        describe(`${testData.object.suiteName}`, ()=> {",
+            "            testData.object.scenarios.slice(0,).forEach(function (testScenario){",
+            "                testData.runScenario(testScenario, false);",
+            "           })",
+            "        })",
+            "    })",
+            "})"
+        ],
+        "description": "Run all defined test cases"
+    },
+    "returnResponse": {
+        "scope": "javascript",
+        "prefix": "!returnResponse",
+        "body": [
+            "await (async ()=>{",
+            "    let testData  = await $1;",
+            "    let res = await testData.returnResponse();",
+            "    return res;",
+            "})()"
+        ],
+        "description": "Run one of the defined test cases"
+    }
+}
