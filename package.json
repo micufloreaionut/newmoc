@@ -2,6 +2,9 @@
   "name": "newmoc",
   "displayName": "newmoc - mocha code snippets",
   "description": "Mocha snippets for API testing",
+  "author": {
+    "name": "Florea Ionut Micu"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.77.0"
@@ -9,8 +12,11 @@
   "categories": [
     "Snippets"
   ],
+  "keywords": ["mocha", "api testing", "mocha snippets"],
   "icon": "icon.png",
   "license": "MIT",
+  "pricing": "Free",
+  "publisher": "Florea Ionut Micu",
   "repository": {
     "type": "git",
     "url": "https://github.com/micufloreaionut/newmoc.git"
